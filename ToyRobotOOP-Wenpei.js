@@ -107,12 +107,10 @@ class Game {
   }
 
   isValidFace(face) {
-    return {
-      NORTH: true,
-      SOUTH: true,
-      EAST: true,
-      WEST: true,
-    } [face];
+    const validFaces = ["NORTH", "SOUTH", "EAST", "WEST"];
+    const isValidFace = validFaces.includes(face);
+
+    return isValidFace;
   }
 
   isRobotExist(robot) {
