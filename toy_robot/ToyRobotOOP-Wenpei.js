@@ -1,5 +1,4 @@
 class Board {
-  // Board dimensions: initial x & y;
   constructor(xs, ys) {
     this.xs = xs;
     this.ys = ys;
