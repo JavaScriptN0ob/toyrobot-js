@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 class Robot {
   constructor(coord, face) {
     this.coord = coord;
@@ -33,7 +34,7 @@ class Robot {
     const isValidCoord = this.game.isValidCoord(newCoord);
 
     if (!isValidCoord) {
-      console.log("Robot hit the border");
+      console.log('Robot hit the border');
       return;
     }
 
@@ -46,10 +47,10 @@ class Robot {
     const { face } = this;
 
     const newFace = {
-      NORTH: "WEST",
-      EAST: "NORTH",
-      SOUTH: "EAST",
-      WEST: "SOUTH",
+      NORTH: 'WEST',
+      EAST: 'NORTH',
+      SOUTH: 'EAST',
+      WEST: 'SOUTH',
     }[face];
 
     this.face = newFace;
@@ -61,10 +62,10 @@ class Robot {
     const { face } = this;
 
     const newFace = {
-      NORTH: "EAST",
-      EAST: "SOUTH",
-      SOUTH: "WEST",
-      WEST: "NORTH",
+      NORTH: 'EAST',
+      EAST: 'SOUTH',
+      SOUTH: 'WEST',
+      WEST: 'NORTH',
     }[face];
 
     this.face = newFace;
